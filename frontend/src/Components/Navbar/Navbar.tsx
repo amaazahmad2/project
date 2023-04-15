@@ -24,6 +24,13 @@ const Navbar = () => {
                         >
                             Signout
                         </p>
+                        <p
+                            style={{ padding: 0, margin: 0 }}
+                            onClick={logoutHandler}
+                            className={styles.navLink}
+                        >
+                            Current Points: implements_points_logic_here
+                        </p>
                     </>
                 ) : (
                     <>
