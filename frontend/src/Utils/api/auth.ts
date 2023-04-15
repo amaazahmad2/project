@@ -10,7 +10,7 @@ export const login = async (username: string, password: string) => {
         username,
         password,
     });
-    return response.data;
+    return response;
 };
 
 export const signup = async (username: string, password: string) => {
@@ -18,5 +18,5 @@ export const signup = async (username: string, password: string) => {
         username,
         password,
     });
-    return response.data;
+    return response;
 };

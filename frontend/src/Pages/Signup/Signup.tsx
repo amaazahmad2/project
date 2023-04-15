@@ -31,9 +31,9 @@ const Signup = () => {
             .then((resp) => {
                 if (resp.status === 200) {
                     alert("User Registered. Please log-in.");
-                    navigate("login");
+                    navigate("/login");
                 } else {
-                    alert(resp.message);
+                    alert(resp.data.message);
                 }
             })
             .catch((error) => {

@@ -21,11 +21,12 @@ const Login = () => {
     const submitHandler = (values: IUser) => {
         login(values.username, values.password)
             .then((resp) => {
-                if (resp.token) {
-                    localStorage.setItem("token", resp.token);
+                console.log("RESP: ", resp);
+                if (resp.status === 200) {
+                    localStorage.setItem("token", resp.data.token);
                     navigate("/");
                 } else {
-                    alert(resp.message);
+                    alert(resp.data.message);
                 }
             })
             .catch((error) => {

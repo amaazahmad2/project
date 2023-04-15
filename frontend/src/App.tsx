@@ -33,8 +33,8 @@ function App() {
                             </PrivateRoute>
                         }
                     />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/signup" element={<Signup />} />
+                    <Route path="login" element={<Login />} />
+                    <Route path="signup" element={<Signup />} />
                     <Route path="*" element={<PageNotFound />} />
                 </Route>
             </Routes>
